@@ -18,7 +18,7 @@ public class AuthService {
         for (User u : users) {
             if (u.getUsername().equalsIgnoreCase(username)
                     && u.getPassword().equals(password)) {
-                System.out.println("✅ Đăng nhập thành công! Xin chào " + u.getUsername());
+                System.out.println(" Đăng nhập thành công! Xin chào " + u.getUsername());
                 return true;
             }
         }
@@ -38,7 +38,7 @@ public class AuthService {
         System.out.print("Nhập số điện thoại: ");
         String phone = sc.nextLine();
         users.add(new User(id, username, password, email, phone));
-        System.out.println("✅ Đăng ký thành công!");
+        System.out.println(" Đăng ký thành công!");
     }
 
     public void changePassword(Scanner sc) {
